@@ -3,6 +3,10 @@ collections:
     output: true
 
 defaults:
+  - scope: 
+      path: ""
+    values: 
+      layout: "default"
   - scope:
       path: ""
       type: "authors"
@@ -13,11 +17,12 @@ defaults:
       type: "posts"
     values: 
       layout: "post"
-  - scope: 
+  - scope:
       path: ""
-    values: 
-      layout: "default"    
-
+      type: "drafts"
+    values:
+      layout: "post"
+      by: "xx"
 plugins: 
   - jekyll-feed
   - jekyll-sitemap

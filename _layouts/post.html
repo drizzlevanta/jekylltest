@@ -3,6 +3,7 @@ layout: default
 ---
 <h1>{{page.title}}</h1>
 <p>{{page.date|date_to_string}}
+    -{{page.by}}
     {% assign author=site.authors|where: 'short_name', page.by |first %}
     {% if author %}
     - <a href="{{ author.url |relative_url }}">{{page.by}}</a>

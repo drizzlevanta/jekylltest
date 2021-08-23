@@ -27,3 +27,9 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate
+
+theme: minima
+
+paginate: 3
+# paginate_path: "/blog/page:num/"

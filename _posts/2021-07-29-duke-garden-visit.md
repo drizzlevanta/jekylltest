@@ -14,4 +14,5 @@ By the time Sarah P. Duke died in 1936, the original gardens were in decline. Dr
 
 Duke Gardens is considered Shipman's greatest work and a national architectural treasure. Most of the approximately 650 other gardens she designed have long since disappeared.
 
+
 [Duke]: https://gardens.duke.edu/about/history

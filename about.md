@@ -1,6 +1,5 @@
 ---
-layout: default
-title: ABt
+title: About
 ---
 
 This is the {{page.title}} page!!!

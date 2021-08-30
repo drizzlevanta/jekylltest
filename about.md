@@ -1,5 +1,6 @@
 ---
 title: About
+layout: default
 ---
 
 This is the {{page.title}} page!!!

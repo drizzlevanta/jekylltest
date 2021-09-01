@@ -39,13 +39,11 @@ twitter_username: jekyllrb
 github_username:  jekyll  
 
 theme: minima
+remote_theme: jekyll/minima
 
 header_pages:
   - about.md
   - staff.html
-
-minima:
-  skin: dark
 
 date_format: "%b %-d, %Y"
 

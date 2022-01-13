@@ -17,6 +17,7 @@ defaults:
       type: "posts"
     values: 
       layout: "post"
+      by: "xx"
   - scope:
       path: ""
       type: "drafts"
@@ -33,17 +34,18 @@ title: My awesome blog
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
  This is the description of the my awesome blog.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/jekylltest" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll  
 
 theme: minima
-remote_theme: jekyll/minima
+# remote_theme: jekyll/minima
 
 header_pages:
   - about.md
   - staff.html
+  - blog.html
 
 date_format: "%b %-d, %Y"
 

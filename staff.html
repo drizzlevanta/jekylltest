@@ -9,6 +9,8 @@ title: Staff
         <h2><a href="{{ author.url| relative_url}}">{{author.name}}</a></h2>
         <h3>Position: {{author.position}}</h3>
         <p>{{author.content | markdownify}}</p>
+        <p>{{author.relative_path}}</p>
+        <p>{{author.url}}</p>
     </li>
     {% endfor %}
 </ul>

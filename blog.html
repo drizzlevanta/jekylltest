@@ -11,3 +11,15 @@ title: Blog
     </li>
     {% endfor %}
 </ul>
+<h2>Related posts
+</h2>
+<ul>
+    {% assign related_posts=site.posts | where_exp: "item", "item.tags contains 'nature'"  %}
+    {% for post in related_posts %}
+    <li>
+        <h3>
+            <a href="{{post.url|relative_url}}">{{post.title}}</a>
+        </h3>
+    </li>
+    {% endfor %}
+</ul>

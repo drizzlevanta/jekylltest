@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Code Syntax Highlights
-authorU: "_authors/xx.md"
+authorU: _authors/xx.md
 ---
 Test rendering a code block with syntax highlighting. 
 
@@ -18,7 +18,5 @@ See [author][author2]'s page.
 page author is: {{pageAuthor.url}}
 
 
-
-
-[author]: {{site.baseurl}}/{% link staff.html  %}
-[author2]: {{site.baseurl}}/{% link _authors/xx.md %}
+[author]: {{site.baseurl}}{% link staff.html  %}
+[author2]: {{site.baseurl}}{% link _authors/xx.md %}

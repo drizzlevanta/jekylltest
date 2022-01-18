@@ -12,4 +12,4 @@ Inherent in the JCRA philosophy is change. When gardens have outlived their pote
 See post about [Duke Garden][duke garden]. 
 
 [ncsu]: https://jcra.ncsu.edu//horticulture/gardens/
-[duke garden]: {% post_url 2021-07-29-duke-garden-visit %}
+[duke garden]: {{site.baseurl}}/{% post_url 2021-07-29-duke-garden-visit %}

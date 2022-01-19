@@ -2,6 +2,7 @@
 layout: post
 title: Code Syntax Highlights
 authorU: _authors/xx.md
+tags: nature plant yellow
 ---
 Test rendering a code block with syntax highlighting. 
 

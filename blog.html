@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
+title: Archive
 ---
 <h1>Latest posts</h1>
 <ul>
@@ -14,10 +14,12 @@ title: Blog
 <h2>Related posts
 </h2>
 <ul>
-    {% assign related_posts=site.posts | where_exp: "item", "item.tags contains 'nature'"  %}
+    {% assign related_tag=site.tags | first | first %}
+    {% assign related_posts=site.posts | where_exp: "item", "item.tags contains 'nature'" | sample: 2  %}
     {% for post in related_posts %}
     <li>
         <h3>
+            <p>{{related_tag }}</p>
             <a href="{{post.url|relative_url}}">{{post.title}}</a>
         </h3>
     </li>

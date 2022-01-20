@@ -45,7 +45,7 @@ theme: minima
 header_pages:
   - about.md
   - staff.html
-  - blog.html
+  - archive.html
 
 date_format: "%b %-d, %Y"
 

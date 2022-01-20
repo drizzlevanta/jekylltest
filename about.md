@@ -5,4 +5,4 @@ layout: default
 
 This is the {{page.title}} page!!!
 
-[Link to posts]({% link blog.html %})
+[Link to posts]( {{site.baseurl}}{% link archive.html %})

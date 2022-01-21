@@ -23,5 +23,21 @@ layout: default
     {%- include disqus_comments.html -%}
   {%- endif -%}
 
+  <p>Related</p>    
+  <div class="footer-col-wrapper">
+    {%- assign relatedPosts=site.posts | where_exp: "item", "item.tags contains page.tags.first" |  where_exp: "item", "item.id!=page.id" | sample: 3 -%}
+    {%- if  relatedPosts.size< 3 -%}
+      {%- assign relatedPosts=site.related_posts | sample: 3 -%}
+    {%- endif -%}
+    {%- for post in relatedPosts -%}
+    <div class="footer-col footer-col-4">
+      <h3 class="post-title-related"><a href="{{post.url|relative_url}}">{{post.title}}</a></h3>
+    </div>
+    {%- endfor -%}
+  </div>
+
+
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+  
 </article>

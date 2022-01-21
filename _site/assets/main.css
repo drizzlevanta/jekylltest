@@ -278,6 +278,11 @@ table {
   margin-bottom: 15px;
   padding-left: 15px; }
 
+.footer-col-related {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 30px; }
+
 .footer-col-1 {
   width: -webkit-calc(35% - (30px / 2));
   width: calc(35% - (30px / 2)); }
@@ -289,6 +294,10 @@ table {
 .footer-col-3 {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
+
+.footer-col-4 {
+  width: -webkit-calc(33% - (30px / 2));
+  width: calc(33% - (30px / 2)); }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
@@ -344,6 +353,13 @@ table {
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
+
+.post-title-related {
+  font-size: 19.2px;
+  line-height: 1; }
+  @media screen and (max-width: 800px) {
+    .post-title-related {
+      font-size: 19.2px; } }
 
 .post-content {
   margin-bottom: 30px; }

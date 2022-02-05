@@ -24,8 +24,7 @@ layout: default
   {%- endif -%}
 
   <div class="related">
-
-    <p>Related</p>    
+    <h3>Related</h3>    
     <div class="footer-col-wrapper">
       {%- assign relatedPosts=site.posts | where_exp: "item", "item.tags contains page.tags.first" |  where_exp: "item", "item.id!=page.id" | sample: 3 -%}
       {%- if  relatedPosts.size< 3 -%}
@@ -35,19 +34,17 @@ layout: default
       {%- for post in relatedPostsSorted -%}
       <div class="footer-col footer-col-4">
         <h3 class="post-title-related"><a href="{{post.url|relative_url}}">{{post.title}}</a></h3>
-        <!-- <p class="post-meta"> -->
+        <p class="related-post-meta">
           <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             {{ page.date | date: date_format }}
           </time>
-        <!-- </p> -->
+        </p>
       </div>
       {%- endfor -%}
     </div>
   </div>
-  
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
-  
 </article>

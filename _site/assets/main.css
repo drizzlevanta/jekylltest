@@ -273,18 +273,10 @@ table {
   color: #828282;
   margin-left: -15px; }
 
-.related {
-  margin-top: 90px; }
-
 .footer-col {
   float: left;
   margin-bottom: 15px;
   padding-left: 15px; }
-
-.footer-col-related {
-  float: left;
-  margin-bottom: 15px;
-  padding-left: 30px; }
 
 .footer-col-1 {
   width: -webkit-calc(35% - (30px / 2));
@@ -297,10 +289,6 @@ table {
 .footer-col-3 {
   width: -webkit-calc(45% - (30px / 2));
   width: calc(45% - (30px / 2)); }
-
-.footer-col-4 {
-  width: -webkit-calc(33% - (30px / 2));
-  width: calc(33% - (30px / 2)); }
 
 @media screen and (max-width: 800px) {
   .footer-col-1,
@@ -333,7 +321,7 @@ table {
   margin-left: 0;
   list-style: none; }
   .post-list > li {
-    margin-bottom: 30px; }
+    margin-bottom: 39px; }
 
 .post-meta {
   font-size: 14px;
@@ -356,13 +344,6 @@ table {
   @media screen and (max-width: 800px) {
     .post-title {
       font-size: 36px; } }
-
-.post-title-related {
-  font-size: 19.2px;
-  line-height: 1; }
-  @media screen and (max-width: 800px) {
-    .post-title-related {
-      font-size: 19.2px; } }
 
 .post-content {
   margin-bottom: 30px; }
@@ -522,3 +503,27 @@ table {
     color: #008080; }
   .highlight .il {
     color: #099; }
+
+.post-title-related {
+  font-size: 19.2px;
+  line-height: 1; }
+  @media screen and (max-width: 800px) {
+    .post-title-related {
+      font-size: 19.2px; } }
+
+.related-post-meta {
+  font-size: 14px;
+  color: #828282;
+  margin-top: -10px; }
+
+.footer-col-related {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 30px; }
+
+.footer-col-4 {
+  width: -webkit-calc(33% - (30px / 2));
+  width: calc(33% - (30px / 2)); }
+
+.related {
+  margin-top: 90px; }

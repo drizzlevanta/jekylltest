@@ -24,6 +24,11 @@ defaults:
     values:
       layout: "post"
       by: "xx"
+  - scope:
+      type: tags
+    values:
+      layout: home
+      permalink: tags/:tag/    
 plugins: 
   - jekyll-feed
   - jekyll-sitemap
@@ -44,6 +49,7 @@ theme: minima
 
 header_pages:
   - about.md
+  - collections.md
   - staff.html
   - archive.html
 

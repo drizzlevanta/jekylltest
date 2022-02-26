@@ -1,0 +1,7 @@
+---
+layout: page
+---
+<!-- <h1>{{page.title | capitalize }}</h1> -->
+{% for post in page.docs %}
+<li><a href="{{post.url|relative_url}}">{{post.title}}</a></li>
+{% endfor %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-by: xx
+author: xx
 title: JC Raulston Arboretum
 categories: nature garden
 tags: nature garden flower

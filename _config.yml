@@ -1,6 +1,9 @@
 collections:
   authors:
     output: true
+    
+permalink: /:year/:month/:day/:title
+
 
 defaults:
   - scope: 
@@ -17,18 +20,18 @@ defaults:
       type: "posts"
     values: 
       layout: "post"
-      by: "xx"
+      author: "xx"
   - scope:
       path: ""
       type: "drafts"
     values:
       layout: "post"
-      by: "xx"
+      author: "xx"
   - scope:
       type: tags
     values:
-      layout: home
-      permalink: tags/:tag/    
+      layout: tag_page
+      permalink: collections/:tag/
 plugins: 
   - jekyll-feed
   - jekyll-sitemap

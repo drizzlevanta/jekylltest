@@ -527,3 +527,16 @@ table {
 
 .related {
   margin-top: 90px; }
+
+.page-group-list {
+  margin-bottom: 51px; }
+
+.page-group-title {
+  margin-bottom: 6px; }
+
+.page-group-meta {
+  margin-top: 0;
+  margin-bottom: 6px; }
+
+.page-group-content {
+  margin-top: 0; }

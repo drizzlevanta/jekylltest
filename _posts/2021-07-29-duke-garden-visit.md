@@ -1,6 +1,6 @@
 ---
 layout: post
-by: lulu
+author: lulu
 categories: nature garden
 ---
 Source: [Duke University][Duke]

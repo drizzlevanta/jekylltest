@@ -12,10 +12,10 @@ def foo
 end
 {% endhighlight %}
 
-author is: {{page.by}}
+author is: {{page.author}}
 
 See [author][author2]'s page.
-{% assign pageAuthor=site.authors | where: "short_name", page.by |first %}
+{% assign pageAuthor=site.authors | where: "short_name", page.author |first %}
 page author is: {{pageAuthor.url}}
 
 

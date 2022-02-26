@@ -1,38 +1,29 @@
 ---
-layout: default
 title: Archive
 ---
-<h1>Archive</h1>
 {% assign postsByYear=site.posts | group_by_exp: "post", "post.date|date: '%Y'" %}
 {% for year in postsByYear %}
-<h4>{{year.name}}</h4>
+<div class="page-group-list">
+<h4 class="post-meta">{{year.name}}</h4>
 <ul>
-    {% for post in year.items %}
-    <li>
-        <h3><a href="{{post.url|relative_url}}">{{post.title}}</a>     
-        </h3>
-    </li>
+    {% for post in year.items %} 
+        <h4>
+            <a href="{{post.url|relative_url}}">{{post.title}}</a>
+          </h4>              
     {% endfor %}
 </ul>
+</div>
 {% endfor %}
 
-<!-- 
-<p>{{site.tags}}</p>
-<p>{{site.tags | first | first}}</p>
-{% assign first_tag=site.tags | first %}
-<p>first_tag {{first_tag | first}}</p>
-<h2>Related posts
-</h2> -->
 
-<ul>
+<!-- <ul>
     {% assign related_tag=site.tags | first | first %}
     {% assign related_posts=site.posts | where_exp: "item", "item.tags contains 'nature'" | sample: 2  %}
     {% for post in related_posts %}
     <li>
         <h3>
-            <!-- <p>{{related_tag }}</p> -->
             <a href="{{post.url|relative_url}}">{{post.title}}</a>
         </h3>
     </li>
     {% endfor %}
-</ul>
+</ul> -->

@@ -1,16 +1,35 @@
 ---
-layout: default
 title: Staff
 ---
-<h1>Staff member</h1>
-<ul>
-    {% for author in site.authors %}
-    <li>
-        <h2><a href="{{ author.url| relative_url}}">{{author.name}}</a></h2>
-        <h3>Position: {{author.position}}</h3>
-        <p>{{author.content | markdownify}}</p>
-        <p>{{author.relative_path}}</p>
-        <p>{{author.url}}</p>
-    </li>
-    {% endfor %}
-</ul>
+
+    <ul class="post-list">
+        {% for author in site.authors %}
+        <li class="page-group-list" >
+          <h3 class="page-group-title"><a class="post-link" href="{{ author.url| relative_url}}">{{author.name}}</a></h3>
+          <p class="page-group-meta">{{author.position}}</p>
+          <p class="page-group-content">{{author.content | markdownify}}</p>       
+        </li>
+        {% endfor %}
+    </ul>
+
+<!-- 
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul> -->
+
+
+
